@@ -1,8 +1,8 @@
 version: "3.0"
 
 services:
-  support_dashboards:
-    image: proagenda2030/dashboards
+  dashboards:
+    image: proagenda2030/dashboards:pa.0.0.1
     restart: always
     user: 'root'
     # Uncomment the lines below to disable application logs STDOUT output
