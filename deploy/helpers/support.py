@@ -20,13 +20,7 @@ class Support(metaclass=Singleton):
                                        'shiny')
 
         shiny_env = os.path.join(dict_['support_api_path'], 'shiny-scripts') 
-        # '/home/rodrigo/nexion-dev/support-install/support-api-env//'
-
-        # shiny_scripts_path = os.path.join(templates_path_parent,
-        #                               Config.ENV_FILES_DIR,
-        #                               '')
-        # if not os.path.exists(templates_path):
-        #     shutil.copyfile()
+        
         self.recursive_overwrite(shiny_scripts_path, shiny_env)
 
     def recursive_overwrite(self, src, dest, ignore=None):
