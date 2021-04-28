@@ -27,7 +27,7 @@ services:
       - api-network
 
   support-postgres-backup:
-    image: support_postgres_backup:latest
+    image: proagenda2030/support_postgres_backup:latest
     container_name: support-postgres-backup
     restart: unless-stopped
     env_file: 
