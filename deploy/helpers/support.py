@@ -22,8 +22,10 @@ class Support(metaclass=Singleton):
         # Environment
         shiny_scripts_path = os.path.join(base_dir,
                                        'shiny')
-        shiny_env = os.path.join(dict_['support_api_path'], 'shiny-scripts') 
-        self.recursive_overwrite(shiny_scripts_path, shiny_env)
+
+        shiny_scripts = os.path.join(dict_['support_api_path'], 'shiny-scripts') 
+        
+        self.recursive_overwrite(shiny_scripts_path, shiny_scripts)
 
     def copy_postgres(self, dict_, base_dir):
         # Environment

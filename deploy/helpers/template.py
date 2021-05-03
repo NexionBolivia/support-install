@@ -161,6 +161,8 @@ class Template:
             'AWS_BACKUP_BUCKET_NAME': dict_['aws_backup_bucket_name'],
             'AWS_BACKUP_UPLOAD_CHUNK_SIZE': dict_['aws_backup_upload_chunk_size'],
             
+            'DASHBOARDS_PORT': dict_['dashboards_port'],
+            'DASHBOARDS_KOBO_TOKEN': dict_['dashboards_kobo_token']
         }
 
     @staticmethod
